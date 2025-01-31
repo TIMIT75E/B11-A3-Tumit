@@ -24,18 +24,25 @@
         .sora {
             font-family: "Sora", serif;
         }
+
+        @media screen and (min-width:426px) {
+            .bg-img {
+                background-image: url('./c1-assets/cat-big.png');
+            }
+        }
     </style>
 </head>
 
 <body class="adlam">
-    <header class="max-w-5xl mx-auto">
-        <nav class="sora">
-            <div class="navbar bg-base-100 space-x-2">
+    <header>
+        <nav class="sora  bg-[#FFF9F4]">
+            <div class="navbar max-w-screen-xl px-5 mx-auto space-x-2">
                 <div>
                     <img src="c1-assets/logo-header.png" alt="">
                 </div>
                 <div class="navbar-start">
-                    <h1 class="text-2xl invisible md:visible lg:visible">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+                    <h1 class="text-2xl invisible md:visible lg:visible">Browse<span class="text-[#FFDC26]">4</span>Pets
+                    </h1>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -46,7 +53,7 @@
                 </div>
                 <div class="navbar-end">
                     <!-- icons -->
-                    <div class="navbar-end invisible lg:visible">
+                    <div class="navbar-end hidden lg:flex">
                         <button class="btn btn-ghost btn-circle">
                             <div class="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -74,26 +81,122 @@
                             <a class="btn btn-warning">Register</a>
                         </div>
                     </div>
-                </div>
-                <div class="dropdown flex-1">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                    <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Find a pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
-                    </ul>
                 </div>
+
             </div>
         </nav>
+        <!-- header image and some text -->
+        <div class="max-w-screen-xl min-h-screen px-5 mx-auto bg-img bg-cover bg-center bg-no-repeat  my-16">
+            <div class="space-y-5 ">
+                <h1 class="text-5xl font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+                <p class="opacity-75">Discover a world of treats, toys, and essentials handpicked for <br> your furry
+                    friends. Shop now and
+                    make tails wag with joy!</p>
+                <a class="btn btn-warning animate-pulse ">Find a pet</a>
+            </div>
+            <div class="w-full flex items-center animate-bounce justify-center">
+                <img class=" w-16 rotate-90" src="https://img.icons8.com/?size=100&id=80625&format=png&color=000000"
+                    alt="">
+            </div>
+            <div class="-mt-16 md:hidden">
+                <img src="c1-assets/header-cat.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
+        <section class="max-w-screen-xl mx-auto mt-20 px-5">
+            <h1 class="text-2xl font-bold">Browse By Categories</h1>
+            <!-- cart section  -->
+            <div class="mt-10 grid grid-cols-2 lg:grid-cols-6 gap-5 ">
+                <!-- cart-1 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/dog-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Dog</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- cart-2 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/fish-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Fish</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- cart-3 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/cat-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cat</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- cart-4 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/bird-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Birds</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- cart-5 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/mouse-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Small pet</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- cart-6 -->
+                <div class="card rounded-xl bg-[#F9DF8A] h-52 shadow-xl">
+                    <div class="avatar">
+                        <div class="mt-6 mx-auto bg-white rounded-full p-3 ">
+                            <img src="c1-assets/rabbit-cartoon.png" />
+                        </div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rabit</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
